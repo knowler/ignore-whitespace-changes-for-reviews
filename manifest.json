@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "ignore-whitespace-changes-for-reviews",
+  "version": "1.0.0",
+  "description": "Ignore whitespace changes for reviews",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://github.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
