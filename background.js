@@ -1,7 +1,7 @@
 chrome.webRequest.onBeforeRequest.addListener(
   details => {
     const url = new URL(details.url);
-    if (url.searchParams.get('w') != 1) {
+    if (!url.searchParams.has('w')) {
       url.searchParams.set('w', 1);
       return {
         redirectUrl: url.toString(),
